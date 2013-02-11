@@ -1,0 +1,1 @@
+{include file="file:news/news.tpl.php"}

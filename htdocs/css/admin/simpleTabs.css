@@ -1,0 +1,34 @@
+#simpleTabs {
+background: #eee;overflow: hidden; margin-bottom:1em;
+}
+.simpleTabs-nav ul{
+overflow: hidden;
+list-style: none; width:100%;
+margin: 0 !important;
+padding: .5em 0;
+background: #eee;
+border-top:1px solid #fff;
+border-bottom:1px solid #ddd;
+}
+.simpleTabs-nav li{
+float: left;
+padding: 10px 15px; margin-left:.5em;
+color: #333;
+cursor: pointer;
+}
+.simpleTabs-nav li:hover{
+background: #ccc; 
+}
+.simpleTabs-nav li.close{
+float: right;
+}
+.simpleTabs-nav li.actif{
+color: #fff;
+font-weight: bold;
+background: #6699CC;
+}
+.simpleTabs-content{
+clear: both;
+padding: 0px;
+color: #fff;
+}

@@ -1,0 +1,46 @@
+
+
+#faq {
+    margin: 0 10px 0 10px;
+    padding: 0;
+    width: auto
+}
+
+#faq form {
+    float: left;
+    width: 99.00%;
+}
+
+#faq form ul, #faq form ul li {
+}
+
+.comment {
+    overflow: hidden;
+    margin: 1em 0px;
+    padding: 5px;
+    display:block;
+}
+
+.comment p {
+    margin: 5px;
+}
+
+.comment .message {
+    border: 1px solid #ccc;
+	padding:10px 15px;
+    border-radius: 6px;
+    /* WebKit (Safari/Chrome) */
+    -webkit-border-radius: 6px;
+    /* KHTML (Konquerer) */
+    -khtml-border-radius: 6px;
+    /* Возможно Opera в будущем */
+    -opera-border-radius: 6px;
+    /* Gecko (Firefox) */
+    -moz-border-radius: 6px;
+	position:relative; z-index:1; color:#555; zoom:1;
+}
+.comment .from {
+	background:url(/images/root/comment.png) no-repeat 20px top; margin-top:-1px; padding:5px 0 0 50px; margin-bottom:1.5em; z-index:30; position:relative; font-size:.9em; line-height:16px; height:16px; color:#777;
+}
+
+.answer { margin-left:40px; font-style:italic; color:#000 !important; }

@@ -1,0 +1,1 @@
+<iframe src="/sadm/catalog/importer/uploadprice" width="400" height="400" frameborder="1" allowtransparency="1" scrolling="no"></iframe>

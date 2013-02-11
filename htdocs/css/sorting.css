@@ -1,0 +1,11 @@
+div.sorting {
+    background-color: #A32497;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+}
+div.sorting a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}

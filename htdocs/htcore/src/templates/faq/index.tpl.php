@@ -1,0 +1,1 @@
+{s_faq tpl="file:faq/faq.tpl.php" items_on_page=15 group=""}

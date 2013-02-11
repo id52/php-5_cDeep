@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://base.wf/photo/43.xml</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/photo/42.xml</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/photo/40.xml</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/photo/39.xml</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/about/cena_na_doki/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/about/cena_na_doki/montadj/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/articles/1/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/about/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/karta/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/novaja_stranica/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/vote/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/forma/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/catalog/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/news/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/articles/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/faq/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/photo/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/contacts/</loc>
+	<lastmod>2011-10-28</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+
+</urlset>

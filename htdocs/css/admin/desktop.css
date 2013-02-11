@@ -1,0 +1,17 @@
+#desctop {
+	margin-left: 5px;
+	overflow: hidden;
+}
+#toolbar {
+	float: left;
+	width: 250px;
+}
+#toolbar ul {
+	margin: 5px;
+}
+#toolbar ul li {
+	margin: 4px;
+	padding: 5px;
+	border: 1px solid #c0cfc0;
+	background-color: #eee;
+}

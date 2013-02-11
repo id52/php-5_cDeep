@@ -1,0 +1,28 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Время создания: Авг 12 2011 г., 13:08
+-- Версия сервера: 5.1.30
+-- Версия PHP: 5.2.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- База данных: `base`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура для представления `t_menu_list`
+--
+
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `t_menu_list` AS select `t_menu`.`mid` AS `mid`,`t_menu`.`mmid` AS `mmid`,`t_menu`.`mgid` AS `mgid`,`t_menu`.`is_group` AS `is_group`,`t_menu`.`mname` AS `mname`,`t_menu`.`mdesc` AS `mdesc`,`t_menu`.`mcomponents` AS `mcomponents`,`t_menu`.`mweight` AS `mweight`,`t_menu`.`mprice` AS `mprice`,`t_menu`.`mprewiev` AS `mprewiev`,`t_menu`.`mimage` AS `mimage`,`t_menu`.`morder` AS `morder`,`t_menu`.`enabled` AS `enabled`,`t_menu`.`code` AS `code`,`t_menu`.`maker` AS `maker`,`t_menu`.`currency` AS `currency`,`t_menu`.`ismain` AS `ismain`,`iCounter`(`t_menu`.`mid`) AS `icount`,`cCounter`(`t_menu`.`mid`) AS `ccount` from `t_menu`;
+
+--
+-- VIEW  `t_menu_list`
+-- Данные: Нет
+--
+

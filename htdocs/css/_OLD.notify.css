@@ -1,0 +1,29 @@
+.grumbleTitle {
+    font:bold 1.2em/1.4em Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+}
+
+* html #achtung-overlay{position:absolute; z-index:700; 
+top: expression(document.getElementsByTagName( 'body' )[0].scrollTop + 150 + "px");
+}
+* html .achtung{width:260px;}
+#achtung-overlay{ position:fixed;top:150px;right:15px;width:260px;z-index:700;}
+.achtung{
+    display:none; 
+	width:240px; 
+	position:relative; overflow:hidden;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px #000;
+    background-color: #efeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(255,255,255,0)));
+    border-color: #777;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 5px 10px #000;
+    margin: 0 0 1em 0;
+    padding: 7px 10px 7px 10px;
+    z-index:9999;
+    font:normal 1em/1.2em Arial, Helvetica, sans-serif;
+	color:#000;
+}

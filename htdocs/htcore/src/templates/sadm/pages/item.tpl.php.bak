@@ -1,0 +1,209 @@
+<script type="text/javascript">
+{literal}
+
+$(document).ready(function(){
+    $("#hidecontrol").toggle(function(){
+        $(".control").css({display:'none'});
+        $(".mainform").css({margin:0, border: 'none'});
+        $(this).css ( {'background-position': 'left bottom'} );
+        $(this).toggleClass("active"); 
+        return false;
+    },function(){
+        $(".mainform").css( {margin: '0px 0px 0px 26%', 'border-left':'1px solid #ddd' } );
+        $(".control").fadeIn();
+        $(this).css ( {'background-position': 'left top'} );
+        $(this).toggleClass("active"); 
+        return false;   
+    });  
+});
+
+{/literal}
+</script>
+
+<div class="control">
+      <ul>
+        <li>
+            <div class="info">
+            <h2>Свойства:</h2>
+            <p>адрес страницы, атрибуты, доступ</p>
+        </div>
+        </li>      
+        <li>
+        <div>
+          <label class="desc">Атрибуты</label><br />
+          <span>
+            <input id="P" 
+            name="Page[P]" 
+            class="checkbox" type="checkbox" 
+            {if $Page.P}checked{/if}
+            {if $Page.readonly || $Page.writable!=1} disabled readonly{/if}
+            value="1"  />
+            <label class="choice" for="P">Опубликовано</label> 
+        </span>
+    <span>
+      <input id="enabled"
+      name="Page[enabled]"
+        class="field checkbox" type="checkbox" 
+            {if $Page.enabled} checked="checked"{/if}
+            {if $Page.readonly || $Page.writable!=1} disabled readonly{/if}
+        value="1" />
+      <label class="choice" for="enabled">Активно&nbsp;в&nbsp;меню</label>
+    </span>
+        </div><br />
+
+        <div>
+        <label class="desc">Путь<a href="/notice/help/admin/PagePath/" class="betterTip" id="hPagePath">(?)</a></label>
+            <input id="name"
+                name="Page[name]"
+                class="field text full"
+                size="30"
+                type="text"
+                maxlength="30"
+                {if $Page.writable!=1} readonly disabled{/if}
+                value="{$Page.name|htmlall}"  />
+            <label for="name"> </label>
+        </div>
+        <div>
+        <label class="desc">Заголовок<a href="/notice/help/admin/PageTitle/" class="betterTip" id="hPageTitle">(?)</a></label>
+        
+            <input id="Title" 
+                class="field text full"
+                name="Page[Title]" 
+                tabindex="11"
+                {if $Page.writable!=1} readonly disabled{/if}
+                type="text" maxlength="255" value="{$Page.Title|htmlall}" /> 
+        </div>
+        <div><label class="desc">Описание<a href="/notice/help/admin/PageTopic/" class="betterTip" id="hPageTopic">(?)</a></label>
+                <input id="Topic"
+                class="field text full"
+                name="Page[Topic]"
+                {if $Page.writable!=1} readonly disabled{/if}
+                value="{$Page.Topic|htmlall}"
+        />
+        </div>
+         </li>
+         <li>
+          <label class="desc">Права доступа<a href="/notice/help/admin/PagePerms/" class="betterTip" id="hPagePerms">(?)</a></label>
+          <div>
+          <table>
+          <tr>
+            <td></td><td>R</td><td>W</td><td>X</td>
+          </tr>
+          <tr>
+            <td>
+            <select class="field text full" name="Page[UID]"{if $Page.writable!=1} readonly disabled{/if}>
+              <option value="1">Root</option>
+              {foreach from=$Page.UIDs item='User'}
+                <option value="{$User.UID}"{if $User.selected} selected{/if}>{$User.Name} {$User.Surname} ({$User.Login})</option>
+              {/foreach}
+            </select>
+            </td>
+            <td><input class="checkbox" name="Page[O][R]" type="checkbox" value="1"{if $Page.O.R} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[O][W]" type="checkbox" value="1"{if $Page.O.W} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[O][X]" type="checkbox" value="1"{if $Page.O.X} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+          </tr>
+          <tr>
+            <td>
+            <select class="field text full" name="Page[GID]"{if $Page.writable!=1} readonly disabled{/if}>
+              <option value="1">Wheel</option>
+              {foreach from=$Page.GIDs item='Group'}
+                <option value="{$Group.GID}"{if $Group.selected} selected{/if}>{$Group.Name} ({$Group.GID})</option>
+              {/foreach}
+            </select>
+            </td>
+            <td><input class="checkbox" name="Page[G][R]" type="checkbox" value="1"{if $Page.G.R} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[G][W]" type="checkbox" value="1"{if $Page.G.W} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[G][X]" type="checkbox" value="1"{if $Page.G.X} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+          </tr>
+          <tr>
+            <td>Other</td>
+            <td><input class="checkbox" name="Page[A][R]" type="checkbox" value="1"{if $Page.A.R} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[A][W]" type="checkbox" value="1"{if $Page.A.W} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+            <td><input class="checkbox" name="Page[A][X]" type="checkbox" value="1"{if $Page.A.X} checked{/if}{if $Page.writable!=1} readonly disabled{/if} /></td>
+          </tr>
+          </table>
+          </div>
+    </li>         
+    <li>         
+        <div>
+        <label class="desc">Авторизация<a href="/notice/help/admin/PageAuth/" class="betterTip" id="hPageAuth">(?)</a></label><br />
+        <span>
+            <select class="field text full" name="Page[Auth]"{if $Page.readonly || $Page.writable!=1} disabled readonly{/if}>
+              <option value="">Наследовать</option>
+              <option value="System"{if $Page.Auth=='System'} selected{/if}>Административная</option>
+              <option value="User"{if $Page.Auth=='User'} selected{/if}>Пользовательская</option>
+            </select>
+            <label for="Passwd">Тип</label>
+        </span>
+        </div>
+    </li>         
+      </ul>
+  </div>
+  
+<div class="mainform clearfix">
+    <div id="hidecontrol"></div>
+    <div class="contentform">
+    <ul>
+  <li>
+        <div class="info">
+            <h2>Содержание:</h2>
+            <p>Шаблоны и структура</p>
+        </div>
+    </li>
+    <li>
+        <label class="desc">Описание <a href="/notice/help/admin/TplDesc/" class="betterTip" id="hTplDesc">(?)</a></label>
+        <div>
+              <input id="Description" 
+                class="field text full"
+                name="Page[Description]" 
+                value="{$Page.Description|htmlall}"
+                {if $Page.writable!=1} readonly disabled{/if}
+        />
+        </div>
+  </li>
+  <li>
+        <label class="desc">Отображение <a href="/notice/help/admin/EnvSel/" class="betterTip" id="hEnvSel">(?)</a></label>
+    
+        <div>
+            <select class="field text full" name="Page[Env]"{if $Page.readonly || $Page.writable!=1} disabled readonly{/if}>
+              <option value="{$Page.Env}" style="background: #f0f0ff;">{$Page.Env}</option>
+              {foreach from=$Page.Envs item='Env'}
+              <option value="{$Env.name}"{if $Env.selected} selected{/if}>{$Env.name} (нода:{$Env.node} от {$Env.emtime}) {$Env.Description}</option>
+              {/foreach}
+              <option value=""{if $Page.Env==""} selected{/if}>Наследовать</option>
+              <option value="empty"{if $Page.Env=="empty"} selected{/if}>Нет</option>
+            </select>
+            <label for="Passwd">Оболочка</label>
+        </div>
+        </li>
+        <li>
+        <div>
+            <select class="field text full" name="Page[Template]"{if $Page.readonly || $Page.writable!=1} disabled readonly{/if}>
+              <option value="{$Page.Template}" style="background: #f0f0ff;">{$Page.Template}</option>
+              {foreach from=$Page.Tpls item='Template'}
+              <option value="{$Template.name}"{if $Template.selected} selected{/if}>{$Template.name} (нода:{$Template.node} от {$Template.emtime}) {$Template.Description}</option>
+              {/foreach}
+              <option value=""{if $Page.Template==""} selected{/if}>нет страницы (404)</option>
+              <option value="tpl.page.{$Page.node}"{if $Page.Template=="tpl.page.`$Page.node`" || $Page.Template=="tpl.page."} selected{/if}>Собственный шаблон</option>
+            </select>
+            <label for="RePasswd">Шаблон</label>
+        </div>
+  </li>   
+              
+    <li>
+        <label class="desc">Шаблон <a href="/notice/help/admin/TplSel/" class="betterTip" id="hTplSel">(?)</a></label>
+        <div>
+                <textarea id="About" 
+                class="field textarea full"
+                name="Page[TemplateSource]" 
+                {if $Page.readonly || $Page.writable!=1} disabled readonly{/if}
+                rows="40" cols="50">{$Page.TemplateSource}</textarea>        
+        </div>
+    </li>
+    <li class="buttons">
+          <button id="saveForm" class="positive" type="submit"{if $Page.writable!=1} readonly disabled{/if}><img src="/img/icons/tick.png"/> Применить</button>
+    </li>
+    </ul>
+    
+   </div>
+</div>

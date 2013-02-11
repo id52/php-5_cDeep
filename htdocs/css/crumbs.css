@@ -1,0 +1,36 @@
+#globalnav  {
+font-size:11px; line-height:16px;
+padding:0 0;
+}
+#globalnav a.home {
+display:block;
+float:left;
+height:16px;
+padding-left:0;
+padding-top:11px;
+width:16px;
+}
+
+#globalnav a, #globalnav em {
+line-height:34px;
+padding:9px 2px;
+}
+#globalnav a.home:hover span {
+background-position:left -16px !important;
+}
+#globalnav a.home span {
+background:url("/images/root/home.gif") no-repeat scroll left top transparent;
+cursor:pointer;
+float:left;
+height:16px;
+overflow:hidden;
+text-indent:-9999px;
+width:16px;
+}
+#globalnav em {
+background:none repeat scroll 0 0 transparent;
+color:#AAAAAA;
+font-size:18px;
+height:34px;
+line-height:34px;
+}

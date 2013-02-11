@@ -1,0 +1,68 @@
+.mytable {
+    padding: 0;
+    margin: 0; border-color:#fff;
+}
+
+.mytable caption {
+    padding: 0 0 5px 0;
+    font: italic 2em/2.4em "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.mytable th {
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+	border-left:0 solid #fff;
+    border-right: 0px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 6px 6px 12px;
+    background: #eee;
+}
+
+
+.mytable th.nobg {
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid #E6E4DD;
+    background: none;
+}
+
+.mytable td {
+	border-left:0 solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #E6E4DD;
+    background: #fff;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}
+
+.mytable td.alt {
+    background: #F5FAFA;
+    color: #797268;
+}
+
+.mytable th.spec {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #fff;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.mytable th.specalt {
+    border-left: 1px solid #C1DAD7;
+    border-top: 0;
+    background: #f5fafa;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #797268;
+}
+
+.mytable tfoot th{
+	border-top:2px solid #ddd;
+    padding: 12px 6px 12px 12px;
+    background: #eee;
+}
+.mytable tfoot th { vertical-align:baseline; !important }
+.mytable tfoot th.sum{ font-size:1.6em; text-transform:lowercase; }

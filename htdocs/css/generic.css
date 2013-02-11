@@ -1,0 +1,114 @@
+/* MAIN TYPOGRAPHY */
+html { font-size: 62.5%; font-family:  helvetica, arial, sans-serif; }
+strong, th, thead td, h1, h2, h3, h4, h5, h6 { font-weight: bold; font-family:  helvetica, arial, sans-serif;}
+cite, em, dfn { font-style: italic; }
+code, kbd, samp, pre, tt, var, input[type='text'], input[type='password'], textarea { font-size: 92%; font-family: tahoma, courier, monaco, "Lucida Console", mono-space; }
+del { text-decoration: line-through; color: #666; }
+ins, dfn { border-bottom: 1px solid #ccc; }
+small, sup, sub { font-size: 85%; }
+abbr, acronym { text-transform: uppercase; font-size: 85%; letter-spacing: .1em; }
+a abbr, a acronym { border: none; }
+abbr[title], acronym[title], dfn[title] { cursor: help; border-bottom: 1px solid #ccc; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
+/* QUOTES */
+blockquote { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; color: #666; font-style:italic }
+blockquote *:first-child:before { content: ""; }
+blockquote *:first-child:after { content: ""; }
+
+/* language specific quotes! */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+
+/* FORMS */
+fieldset { border: 1px solid #ccc; }
+legend { background: #fff; }
+textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; background: #fff; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #888; outline: 1px dotted #333; }
+input, select { cursor: pointer; }
+input[type='text'], input[type='password']  { cursor: text; }
+
+/*
+-----------------------------
+CONTENT ONLY
+-----------------------------
+*/	
+
+/* BASE SIZES */
+body { font-size: 1.2em; line-height: 1.6em; background:#FFF; }
+h1 { font-size: 1.6em; text-transform:uppercase; }
+h2 { font-size: 1.5em; font-weight:normal;}
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+/* HR */
+hr { display: block; background: #aaa; color: #aaa; width: 100%; height: 1px; border: none; }
+
+/* LISTS */
+#wrapper dt { font-weight: bold; }
+
+/* TABLES */
+#wrapper table {  }
+#wrapper th, td {  vertical-align:top; }
+
+/* MARGINS & PADDINGS */
+blockquote *:first-child { margin: .8em 0; }
+hr, p, ul, ol, dl, pre, blockquote, address, table, form { margin-bottom: 1.6em; }
+p+p { margin-top: -.8em; }
+
+/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 */
+h1 { padding: 1em 0 .5em; margin: 0 0 .535em; }
+h2 { margin: 1.07em 0 .535em; }
+h3 { margin: 1.14em 0 .57em; }
+h4 { margin: 1.23em 0 .615em; }
+h5 { margin: 1.33em 0 .67em; }
+h6 { margin: 1.6em 0 .8em; }
+th, td { padding: .8em; }
+caption { padding-bottom: .8em; } /* padding instead of margin for IE */
+blockquote { padding: 0 1em; margin: 1.6em 0; }
+fieldset { padding: 0 1em 1em 1em; margin: 1.6em 0; } /* padding-top is margin-top for fieldsets in Opera */
+legend { padding-left: .8em; padding-right: .8em; }
+legend+* { margin-top: 1em; } /* compensates for the opera margin bug */
+textarea, input { padding: .3em .4em .15em .4em; }
+select { padding: .1em 0 0 .2em; }
+option { padding: 0 .4em; }
+dt { margin-top: .8em; margin-bottom: .4em; }
+form div { margin-bottom: .8em; }
+
+/* COLORS */
+a:link { text-decoration: underline; color: #3399cc; }
+a:visited { text-decoration: underline; color: #3399cc; }
+a:hover { text-decoration: underline; color: #c33; }
+a:active, a:focus { text-decoration: underline; color: #000; }
+
+a img {text-decoration:none !important;}
+
+div.more{border-bottom:1px solid #5a921f; height:auto !important; height:1%; overflow:hidden; padding:0; margin-bottom:.6em;}
+.more a:link, .more a:visited { display:block; text-align:right; padding:0 20px 0 0; background:url(/images/green-arrow.gif) no-repeat right center; float:right;  color:#000000;}
+.more a:hover {text-decoration:none}
+
+code, pre { color: #c33; } /* very optional, but still useful. W3C uses about the same colors for codes */
+
+/* 
+P.I.E. FLOAT CLEARING ----------------------------
+See http://www.positioniseverything.net/easyclearing.html
+and http://www.456bereastreet.com/archive/200603/new_clearing_method_needed_for_ie7/
+*/
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  height: 0; font-size:1px; line-height:1px;  visibility: hidden;
+  display: block;
+}
+
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+
+/* IMG ALIGN */
+img[align=left] {float:left; margin:0 1em 1em 0}
+img[align=right] {float:right; margin:0 0 1em 1em}

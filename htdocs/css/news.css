@@ -1,0 +1,23 @@
+#sidenews {
+	 margin:1em;
+}
+#sidenews .nitem,
+#news .nitem {margin:0 0 2.5em 0; display:block;  clear:both;}
+
+#sidenews .nitem img,
+#news .nitem img { background:#eee}
+
+#sidenews .nitem p,
+#news .nitem p{
+    margin:0 0 1.5em 0 !important; line-height:1.4em; color:#444;
+}
+#sidenews .ntitle,
+#news .ntitle { font:bolder 1.1em Arial, Helvetica, sans-serif;}
+
+#sidenews .newsdate,
+#news .newsdate {
+    color:#999; display:block; font:.8em/1em Verdana, Geneva, Arial, Helvetica, sans-serif; letter-spacing:-1px;
+    padding:.3em 0;
+	border-bottom:1px dotted #CCCCCC; margin-bottom:.5em;
+}
+.allnews { text-align:center; font-style:italic;  clear:both;}

@@ -1,0 +1,232 @@
+/* ------------------------------------------------------------------------------
+   
+   UNI-FORM DEFAULT by DRAGAN BABIC                         (v2) | Wed, 31 Mar 10
+   
+   ------------------------------------------------------------------------------
+   
+   Copyright (c) 2010, Dragan Babic
+   
+   Permission is hereby granted, free of charge, to any person
+   obtaining a copy of this software and associated documentation
+   files (the "Software"), to deal in the Software without
+   restriction, including without limitation the rights to use,
+   copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following
+   conditions:
+   
+   The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+   
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+   
+   ------------------------------------------------------------------------------ */
+
+.uniForm{}
+    
+    .uniForm legend{ font-weight: bold; font-size: 100%; margin: 0; padding: 1.5em 0; }
+  
+    .uniForm .ctrlHolder{ padding: .75em;}
+    .uniForm .ctrlHolder.focused{ background: #fffcdf; }
+    
+    .uniForm .inlineLabels .noLabel{}
+    
+    .uniForm .buttonHolder{ text-align: left; margin: 0 0 .75em 0; padding: .333em .75em;
+                          }
+      .uniForm .buttonHolder .primaryAction{ padding: 6px 12px; line-height: 1; background: #254a86; border: 1px solid #163362; font-size: 12px; font-weight: bold; color: #fff;
+                                             /* CSS3 */
+                                             border-radius:         4px;
+                                             -webkit-border-radius: 4px;
+                                             -moz-border-radius:    4px;
+                                             -o-border-radius:      4px;
+                                             -khtml-border-radius:  4px;
+                                             box-shadow: 1px 1px 0 #fff;
+                                             -webkit-box-shadow: 1px 1px 0 #fff;
+                                             -moz-box-shadow: 1px 1px 0 #fff;
+                                             text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+                                           }
+      .uniForm .buttonHolder .primaryAction:active{ position: relative; top: 1px; }
+      .uniForm .secondaryAction            { text-align: left; }
+      .uniForm button.secondaryAction      { background: transparent; border: none; color: #777; margin: 1.25em 0 0 0; padding: 0; }
+      
+        .uniForm .inlineLabels label em,
+        .uniForm .inlineLabels .label em{ font-style: normal; font-weight: bold; }
+        .uniForm label small{ font-size: .75em; color: #777; }
+        
+      .uniForm .textInput,
+      .uniForm textarea    { padding: 4px 0px; background: #fff;}
+      .uniForm textarea    { }
+      .uniForm select      {}
+      .uniForm .fileUpload {}
+      
+      .uniForm ul{ margin:0 !important; padding:0}
+        .uniForm li{ list-style:none !important }
+          .uniForm ul li label{ font-size: 1em; }
+            
+            .uniForm .small {}
+            .uniForm .medium{}
+            .uniForm .large {} /* Large is default and should match the value you set for .textInput, textarea or select */
+            .uniForm .auto  {}
+            .uniForm .small,
+            .uniForm .medium,
+            .uniForm .auto{}
+      
+      /* Get rid of the 'glow' effect in WebKit, optional */
+      .uniForm .ctrlHolder .textInput:focus,
+      .uniForm .ctrlHolder textarea:focus{ outline: none; }
+      
+      .uniForm .formHint                    { font-size: .9em; margin:0; padding:0; color: #777; }
+      .uniForm .inlineLabels .formHint      { padding-top: .5em; padding-top: 0em; display:block; height:auto !important; height:1% }
+      .uniForm .ctrlHolder.focused .formHint{ color: #333; }
+      
+/* ----------------------------------------------------------------------------- */
+/* ############################### Messages #################################### */
+/* ----------------------------------------------------------------------------- */
+
+  /* Error message at the top of the form */
+  .uniForm #errorMsg{ background: #ffdfdf; border: 1px solid #f3afb5; margin: 0 0 1.5em 0; padding: .75em 1.5em;
+                      /* CSS3 */
+                      border-radius:         4px;
+                      -webkit-border-radius: 4px;
+                      -moz-border-radius:    4px;
+                      -o-border-radius:      4px;
+                      -khtml-border-radius:  4px;
+                    }
+    .uniForm #errorMsg h3{ color:#d12f19; margin:.75em} /* Feel free to use a heading level suitable to your page structure */
+    .uniForm #errorMsg ol{ margin: 0 0 1.5em 0; padding: 0; }
+      .uniForm #errorMsg ol li{ margin: 0 0 3px 1.5em; padding: 7px; background: #f6bec1; position: relative; font-size: 1em;
+                                /* CSS3 */
+                                border-radius:         4px;
+                                -webkit-border-radius: 4px;
+                                -moz-border-radius:    4px;
+                                -o-border-radius:      4px;
+                                -khtml-border-radius:  4px;
+                              }
+  
+  .uniForm .ctrlHolder.error,
+  .uniForm .ctrlHolder.focused.error{ background: #ffdfdf; border: 1px solid #f3afb5;
+                                      /* CSS3 */
+                                      border-radius:         4px;
+                                      -webkit-border-radius: 4px;
+                                      -moz-border-radius:    4px;
+                                      -o-border-radius:      4px;
+                                      -khtml-border-radius:  4px;
+                                    }
+    .uniForm .ctrlHolder.error input.error,
+    .uniForm .ctrlHolder.error select.error,
+    .uniForm .ctrlHolder.error textarea.error{ color: #af4c4c; margin: 0 0 6px 0; padding: 4px; }
+  
+  /* Success messages at the top of the form */
+  .uniForm #okMsg{ background: #c8ffbf; border: 1px solid #a2ef95; margin: 0 0 1.5em 0; padding: 0 1.5em; text-align: center;
+                   /* CSS3 */
+                   border-radius:         4px;
+                   -webkit-border-radius: 4px;
+                   -moz-border-radius:    4px;
+                   -o-border-radius:      4px;
+                   -khtml-border-radius:  4px;
+                 }
+    .uniForm #okMsg p{ margin: 0; }
+
+/* ----------------------------------------------------------------------------- */
+/* ############################### Messages #################################### */
+/* ----------------------------------------------------------------------------- */
+
+.uniForm .hilight{
+	background:#C3EFEF; border:#aac6e8 solid 1px; margin: 0 0 1.5em 0; padding: .75em 0;
+	               /* CSS3 */
+                   border-radius:         4px;
+                   -webkit-border-radius: 4px;
+                   -moz-border-radius:    4px;
+                   -o-border-radius:      4px;
+                   -khtml-border-radius:  4px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ############################### Columns ##################################### */
+/* ----------------------------------------------------------------------------- */
+
+    .uniForm .col{}
+    .uniForm .col.first{}
+    .uniForm .col.last{}
+    .uniForm .col{ }
+    /* Use .first and .last classes to control the layout/spacing of your columns */
+    .uniForm .col.first{ width: 48%; float: left; clear: none;                   }
+    .uniForm .col.last { width: 48%; float: right; clear: none; margin-right: 0; }
+    .uniForm .col.third{ width: 66%; float: left; clear: none;                   }
+    .uniForm .col.one-third { width: 32%; float: right; clear: none; margin-right: 0; }
+	
+
+/* ----- BUTTONS ----- */
+
+.buttonHolder a, .buttonHolder button{
+padding: 6px 12px; line-height: 1; background: #6AA84C url(/images/buttonbg.png) repeat-x center bottom; border: 1px solid #333; font-size: 12px; font-weight: bold; color: #fff;
+                                             /* CSS3 */
+                                             border-radius:         4px;
+                                             -webkit-border-radius: 4px;
+                                             -moz-border-radius:    4px;
+                                             -o-border-radius:      4px;
+                                             -khtml-border-radius:  4px;
+                                             box-shadow: 1px 1px 0 #fff;
+                                             -webkit-box-shadow: 1px 1px 0 #fff;
+                                             -moz-box-shadow: 1px 1px 0 #fff;
+                                             text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+}
+
+.buttonHolder button img, .buttonHolder a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+.buttonHolder button:hover, .buttonHolder a:hover{
+    background:#bde8ff;
+    border:1px solid #49a5cf;
+    text-decoration:none;
+    color:#254a86; text-shadow:none;
+}
+.buttonHolder a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
+/* POSITIVE */
+
+.buttonHolder button.positive, .buttonHolder a.positive{
+    color:#fff; background: #529214; border: 1px solid #529214;
+}
+.buttonHolder a.positive:hover, button.positive:hover{
+   background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214; text-shadow:none;
+}
+.buttonHolder a.positive:active{
+    background-color:#CDDF88;
+    border:1px solid #529214;
+    color:#fff !important;
+}
+
+/* NEGATIVE */
+
+.buttonHolder a.negative, button.negative{
+    color:#fff; background: #d12f19; border: 1px solid #d12f19;
+}
+.buttonHolder a.negative:hover, button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19; text-shadow:none;
+}
+.buttonHolder a.negative:active{
+    background-color:#F4AAA0;
+    border:1px solid #F4AAA0;
+    color:#fff !important;
+}

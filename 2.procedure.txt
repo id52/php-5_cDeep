@@ -1,0 +1,27 @@
+--
+-- Функции
+--
+CREATE FUNCTION `cCounter`(cgid int(11)) RETURNS int(5)
+    DETERMINISTIC
+return (SELECT COUNT(*) FROM `t_menu` WHERE `mgid`=cgid AND `is_group`=1 AND `enabled`=1)$$
+
+CREATE FUNCTION `iCounter`(cgid int(11)) RETURNS int(5)
+    DETERMINISTIC
+return (SELECT COUNT(`mid`) FROM `t_menu` WHERE `mgid`=cgid AND `is_group`=0 AND `enabled`=1)$$
+
+CREATE FUNCTION `p_tag_getByName`(TagName VARCHAR(100)) RETURNS int(11)
+    DETERMINISTIC
+BEGIN
+INSERT IGNORE INTO `p_tag` (`Tag`) VALUES (TagName);
+RETURN (SELECT `id` FROM `p_tag` WHERE `Tag` LIKE TagName LIMIT 1 );
+END$$
+
+CREATE FUNCTION `t_site_count`(id INT(11)) RETURNS int(3)
+    DETERMINISTIC
+return (SELECT COUNT(`node`) FROM `t_site` WHERE `parent`=id )$$
+
+CREATE FUNCTION `t_site_sublevel`(id INT(11)) RETURNS int(3)
+    DETERMINISTIC
+return (SELECT (`level`+1) FROM `t_site` WHERE `node`=id )$$
+
+DELIMITER ;

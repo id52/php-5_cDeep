@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://base.wf/photo/162.xml</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/mail/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/news/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/users/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/clients/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/orders/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/catalog/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/photo/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/faq/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/sadm/pages/</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/news/191.xml</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/news/193.xml</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/news/194.xml</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>http://base.wf/news/195.xml</loc>
+	<lastmod>2012-07-24</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1</priority>
+</url>
+
+</urlset>

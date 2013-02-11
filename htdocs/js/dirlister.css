@@ -1,0 +1,158 @@
+/*
+* File Name : dirlister.css
+* Version : 1.1
+* Release Date : 05/05/2008
+*
+* By : Simon Pottier
+* Right : http://creativecommons.org/licenses/by-nd/2.0/be/
+* Site : www.guistalk.com
+*/
+
+/* @group DEFAULT SKIN */
+
+#dirtreepath {
+  font-family:Arial, Helvetica, sans-serif;
+  margin:1.5em 0 0.9em 0;
+  color:#cc9900;
+  font-weight:normal;
+  font-size:1.6em;
+  padding:0;
+   
+}
+
+.dirtree {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  display: none;
+ /* overflow: hidden; /* IE SUX */
+}
+
+.dirtree li {
+  padding-left: 20px;
+  white-space: nowrap;
+  line-height: 1.2em !important;
+  min-height:1.2em !important;
+  border:none !important;
+}
+
+.dirtree .highlight {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.dirtree a {
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-style: none;
+  display: block;
+/*  height: 18px;*/
+}
+
+.dirtree a:hover {
+  background-color: #e5e5e5;
+}
+
+.dirtree span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.dirtree .title {
+  float: left;
+  color: black; padding:2px;
+}
+
+.dirtree .size {
+  color: #3f3f3f;
+  float: right;
+}
+
+.dirtree .date {
+  color: #3f3f3f;
+  float: right;
+  margin-left: 20px;
+}
+
+/* @end */
+
+/* @group DEFAULT ICONS */
+
+.dirtree .close { background: url(/img/admin/folder.png) no-repeat; }
+.dirtree .open { background: url(/img/admin/folder_open.png) no-repeat; }
+.dirtree .file { background: url(/img/admin/page_white.png) no-repeat; }
+.dirtree .wait { background: url(/img/admin/spinner.gif) no-repeat; }
+
+/* @end */
+
+/* @group EXTENSIONS */
+
+/* @group IMAGES */
+
+.dirtree .jpg, .dirtree .jpeg, .dirtree .gif, .dirtree .png, .filtree .bmp { background: url(/img/admin/picture.png) no-repeat; }
+.dirtree .psd, .dirtree .tiff { background: url(/img/admin/photo.png) no-repeat; }
+.dirtree .pdf { background: url(/img/admin/page_white_acrobat.png) no-repeat; }
+
+/* @end */
+
+/* @group MOVIES */
+
+.dirtree .mp4, .dirtree .avi, .dirtree .mov, .dirtree .mpg, .dirtree .mpeg, .dirtree .wmv, .dirtree .divx, .dirtree .ogm { background: url(/images/icons/film.png) no-repeat; }
+
+/* @end */
+
+/* @group MUSICS */
+
+.dirtree .m4p { background: url(/img/admin/music.png) no-repeat; }
+.dirtree .mp3 { background: url(/img/admin/music.png) no-repeat; }
+.dirtree .ogg { background: url(/img/admin/music.png) no-repeat; }
+.dirtree .wav { background: url(/img/admin/music.png) no-repeat; }
+
+/* @end */
+
+/* @group CODES */
+
+.dirtree .asp, .dirtree .aspx, .dirtree .c, .dirtree .cfm, .dirtree .cgi, .dirtree .cpp, .dirtree .h, .dirtree .vb, .dirtree .xml { background: url(/img/admin/page_white_code.png) no-repeat; }
+
+/* @group RUBY */
+
+.dirtree .rb, .dirtree .rbx, .dirtree .rhtml, .dirtree .ruby { background: url(/img/admin/page_white_ruby.png) no-repeat; }
+
+/* @end */
+
+/* @group FLASH */
+
+.dirtree .fla, .dirtree .swf, .dirtree .as { background: url(/img/admin/page_white_flash.png) no-repeat; }
+.dirtree .as { background: url(/img/admin/page_white_actionscript.png) no-repeat; }
+
+/* @end */
+
+.dirtree .htm, .dirtree .html { background: url(/img/admin/page_white_world.png) no-repeat; }
+.dirtree .sql { background: url(/img/admin/page_white_database.png) no-repeat; }
+.dirtree .css { background: url(/img/admin/css.png) no-repeat; }
+.dirtree .php { background: url(/img/admin/page_white_php.png) no-repeat; }
+
+/* @end */
+
+/* @group TEXTES */
+.dirtree .txt, .dirtree .rtf { background: url(/img/admin/txt.png) no-repeat; }
+
+/* @end */
+
+/* @group ARCHIVES */
+
+.dirtree .zip, .dirtree .rar, .dirtree .tar, .dirtree .gz, .dirtree .bz2 { background: url(/images/icons/page_white_zip.png) no-repeat; }
+
+/* @end */
+
+/* @group OFFICE */
+
+.dirtree .xls {  background: url(/img/admin/page_white_excel.png) no-repeat; }
+.dirtree .ppt { background: url(/img/admin/page_white_powerpoint.png) no-repeat; }
+.dirtree .doc { background: url(/img/admin/page_white_word.png) no-repeat; }
+
+/* @end */
+
+/* @end */

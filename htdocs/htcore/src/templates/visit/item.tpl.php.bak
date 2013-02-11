@@ -1,0 +1,39 @@
+{loader src='jquery.js, jquery.colorbox-min.js' type='js' comment='JQuery'}
+{loader src='gallery.css, colorbox.css' base='/css/' type='css'}
+
+        <script type="text/javascript"> 
+        {literal}
+            jQuery(document).ready(function(){
+                $("a[rel='mirrors']").colorbox();
+            });
+        {/literal}
+        </script>
+
+	<h2>{$Item.fio}</h2>
+	{if $Item.post}
+    {if $Item.photo}<img src="/preview/200x200/upload/photo/{$Item.photo}"
+align="left">{/if}
+    {$Item.post}{/if}
+
+<div id="gallery">
+<div class="floats">
+    
+	{section loop=$Item.Photo name=img}
+
+    <div class="left">
+
+        <div class="r">
+			<a href="/preview/700x700/upload/photo/{$Item.Photo[img].src}" rel="mirrors" title="{if $Item.Photo[img].Name}{$Item.Photo[img].Name}{else}Рис.{$cDeep.section.img.index+1}{/if}"><img src="/zoom/190x190/upload/photo/{$Item.Photo[img].src}" alt="{if $Item.Photo[img].Name}{$Item.Photo[img].Name}{else}Рис.{$cDeep.section.img.index+1}{/if}"/></a><br />
+            <p>{if $Item.Photo[img].Name}{$Item.Photo[img].Name}{else}Рис.{$cDeep.section.img.index+1}{/if}
+            &nbsp;<em>{$Item.Photo[img].Description}</em></p>
+        </div>
+        <div class="min"></div>
+    </div><!---->
+
+
+	{sectionelse}
+    	Фотографий нет
+    {/section}   
+    
+</div>
+</div>

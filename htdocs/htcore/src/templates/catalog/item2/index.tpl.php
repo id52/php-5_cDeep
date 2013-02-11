@@ -1,0 +1,1 @@
+123 {s_catalog action="item" item=$State.Current_item mmid=0}
